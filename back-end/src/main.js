@@ -1,13 +1,19 @@
-import printExample from "./example/test-module.js"
+import * as fs from "fs"
+import { jsonToCsv, filterDataAndWrite, csvToJson } from "./utils/jsonParser.js"
 
 const main = async () => {
-  const now = new Date()
-  console.log(`UTC time is ${now} \nWrite your production code here`)
-  printExample()
-  console.log('-'.repeat(50))
-  /**
-   * Please import all your code, don't type any logic here just import functions and run them.
-   */
+  var data = JSON.parse(fs.readFileSync("../data/vegetable_order.json"));
+  const csv = await jsonToCsv(data)
+  try {
+    filterDataAndWrite("../output/json_output.csv", csv)
+  }
+  catch (e) {
+    console.error(e.message)
+  }
+
+  // Bonus
+  console.log(await csvToJson("../output/json_output.csv"))
+  
 }
 
 try {
