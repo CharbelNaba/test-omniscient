@@ -5,7 +5,9 @@ const scratchpad = async () => {
 }
 
 try {
-  await scratchpad();
+  (async () => {
+    await scratchpad()
+  })();
 } catch (error) {
   throw Error(error)
 }
