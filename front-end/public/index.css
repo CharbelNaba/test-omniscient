@@ -1,0 +1,9 @@
+.test-square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: none;
+}

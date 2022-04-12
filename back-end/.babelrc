@@ -1,0 +1,9 @@
+{
+  "sourceType": "module",
+  "presets": ["@babel/preset-env"],
+  "env": {
+    "test": {
+      "plugins": [["@babel/transform-runtime"]]
+    }
+  }
+}

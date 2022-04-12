@@ -1,0 +1,2 @@
+const defaultString = " ______________\n< \"Let's go !\" >\n --------------\n        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\\\n                ||----w |\n                ||     ||"
+export {defaultString}

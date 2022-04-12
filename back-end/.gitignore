@@ -1,0 +1,12 @@
+.env
+node_modules/
+output/**
+!output/readme.md
+!output/index.html
+!output/js/**
+!output/css/**
+bundle-cli.zip
+yarn-error.log
+errorLog.txt
+coverage/
+yarn-error.log
